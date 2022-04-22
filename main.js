@@ -47,6 +47,14 @@ function draw()
     }
 }
 
+check_sketch()
+if (drawn_sketch == sketch) 
+{
+  answer_holder="set";
+  score++;
+  document.getElementById("Score").innerHTML="Score :"+score;
+}
+
 function classifyCanvas()
 {
     classifer.classify(canvas,gotResult);
